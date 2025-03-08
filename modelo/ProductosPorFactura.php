@@ -3,18 +3,18 @@
     {
 
         private int $cantidad;
-        private double $subTotal;
+        private float $subTotal;
         
         public function __construct($cantidad, $subTotal){
             $this-> cantidad = $cantidad;
             $this-> subTotal = $subTotal;
         }
 
-        public function getCantidad($cantidad){
+        public function getCantidad(){
             return $this-> cantidad;
         }
 
-        public function getSubTotal($subTotal){
+        public function getSubTotal(){
             return $this-> subTotal;
         }
 
@@ -25,6 +25,6 @@
         public function setSubTotal($subTotal){
             $this-> subTotal = $subTotal;
         }
-        
+
     }
 ?>

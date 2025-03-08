@@ -4,7 +4,7 @@
         private string $codigo;
         private string $nombre;
         private int $stock;
-        private double $valorUnitario;
+        private float $valorUnitario;
 
         public function __construct($codigo, $nombre, $stock, $valorUnitario){
             $this-> codigo = $codigo;
@@ -22,11 +22,11 @@
             return $this-> nombre;
         }
 
-        public function getStock($stock){
+        public function getStock(){
             return $this-> stock;
         }
         
-        public function getValorUnitario($valorUnitario){
+        public function getValorUnitario(){
             return $this-> valorUnitario;
         }
 
@@ -45,6 +45,6 @@
         public function setValorUnitario($valorUnitario){
             $this-> valorUnitario = $valorUnitario;
         }
-        //nada
+    
     }
     
