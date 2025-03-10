@@ -5,11 +5,13 @@
         private int $numero;
         private float $total;
 
-        public function __construct($fecha, $numero){
+        //Constructor
+        public function __construct(DateTime $fecha, int $numero){
             $this-> fecha = $fecha;
             $this-> numero = $numero;
         }
 
+        //Métodos get
         public function getFecha(){
             return $this-> fecha;
         }
@@ -22,18 +24,18 @@
             return $this-> total;
         }
 
-        public function setFecha($fecha){
+        //Métodos set
+        public function setFecha(DateTime $fecha){
             $this-> fecha = 
         }
 
-        public function setNumero($numero){
+        public function setNumero(int $numero){
             $this-> numero = $numero;
         }
 
-        public function setTotal($total){
+        public function setTotal(float $total){
             $this-> total = $total;
         }
-
+        
     }
-
 ?>

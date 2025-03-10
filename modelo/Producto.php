@@ -6,14 +6,15 @@
         private int $stock;
         private float $valorUnitario;
 
-        public function __construct($codigo, $nombre, $stock, $valorUnitario){
+        //Constructor
+        public function __construct(string $codigo,string  $nombre, int $stock, float $valorUnitario){
             $this-> codigo = $codigo;
             $this-> nombre = $nombre;
             $this-> stock = $stock;
             $this-> valorUnitario = $valorUnitario;
         }
 
-        //Metodos gets y sets
+        //Métodos get
         public function getCodigo(){
             return $this-> codigo;
         }
@@ -30,21 +31,21 @@
             return $this-> valorUnitario;
         }
 
-        public function setCodigo($codigo){
+        //Métodos set
+        public function setCodigo(string $codigo){
             $this-> codigo = $codigo;
         }
         
-        public function setNombre($nombre){
+        public function setNombre(string $nombre){
             $this-> nombre = $nombre;
         }
         
-        public function setStock($stock){
+        public function setStock(int $stock){
             $this-> stock = $stock;
         }
         
-        public function setValorUnitario($valorUnitario){
+        public function setValorUnitario(float $valorUnitario){
             $this-> valorUnitario = $valorUnitario;
         }
-    
     }
-    
+?>  

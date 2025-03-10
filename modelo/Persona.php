@@ -6,13 +6,15 @@
         private string $nombre;
         private string $telefono;
 
-        public function __construct($codigo, $email, $nombre, $telefono){
+        //Constructor
+        public function __construct(string $codigo, string $email, string $nombre, string $telefono){
             $this-> codigo = $codigo;
             $this-> email = $email;
             $this-> nombre = $nombre;
             $this-> telefono = $telefono;
         }
 
+        //Métodos get
         public function getCodigo(){
             return $this-> codigo;
         }
@@ -29,21 +31,21 @@
             return $this-> telefono;
         }
 
-        public function setCodigo($codigo){
+        //Métodos set
+        public function setCodigo(string $codigo){
             $this-> codigo = $codigo;
         }
         
-        public function setEmail($email){
+        public function setEmail(string $email){
             $this-> stock = $stock;
         }
         
-        public function setNombre($nombre){
+        public function setNombre(string $nombre){
             $this-> nombre = $nombre;
         }
         
-        public function setTelefono($telefono){
+        public function setTelefono(string $telefono){
             $this-> telefono = $telefono;
         }
     }
-
 ?>

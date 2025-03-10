@@ -5,7 +5,7 @@
         private string $codigo;
         private string $nombre;
         
-        public function __construct($codigo, $nombre){
+        public function __construct(string $codigo, string $nombre){
             $this-> codigo = $codigo;
             $this-> nombre = $nombre;
         }
@@ -18,11 +18,11 @@
             return $this-> nombre;
         }
 
-        public function setCodigo($codigo){
+        public function setCodigo(string $codigo){
             $this-> codigo = $codigo;
         }
 
-        public function setNombre($nombre){
+        public function setNombre(string $nombre){
             $this-> nombre = $nombre;
         }
 

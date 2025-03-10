@@ -1,14 +1,17 @@
 <?php
-    class Vendedor
+    class Vendedor extends Persona
     {
         private int $carnet;
         private string $direccion;
     
-        public function __construct($carnet, $direccion){
-            $this-> carnet = $carnet;
-            $this-> direccion = $direccion;
+        //Constructor
+        public function __construct(string $codigo, string $email, string $nombre, string $telefono, int $carne, string $direccion) {
+            parent::__construct($codigo, $email, $nombre, $telefono); //parent:: se usa para llamar métodos de la clase padre, en este caso Persona
+            $this->carne = $carne;
+            $this->direccion = $direccion;
         }
 
+        //Métodos get
         public function getCarnet(){
             return $this-> carnet;
         }
@@ -17,14 +20,13 @@
             return $this-> direccion;
         }
 
-        public function setCarnet($carnet){
+        //Métodos set
+        public function setCarnet(int $carnet){
             $this-> carnet = $carnet;
         }
 
-        public function setDireccion($direccion){
+        public function setDireccion(string $direccion){
             $this-> direccion = $direccion;
         }
-
     }
-
 ?>
