@@ -37,7 +37,7 @@
         }
         
         public function setEmail(string $email){
-            $this-> stock = $stock;
+            $this-> email = $email;
         }
         
         public function setNombre(string $nombre){

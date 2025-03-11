@@ -26,7 +26,7 @@
 
         //Métodos set
         public function setFecha(DateTime $fecha){
-            $this-> fecha = 
+            $this-> fecha = $fecha;
         }
 
         public function setNumero(int $numero){
